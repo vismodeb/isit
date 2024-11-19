@@ -1,0 +1,517 @@
+/* 
+  Template Name: ISIT Landing Page
+  Template URI: https://example.com
+  Author Name: 
+  Author URI: https://
+  Version: 1.0.0
+  Description: This is figma to html
+  Tags: figma, html
+*/
+
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* Default Css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  color: #0d0d0d;
+  font-size: 14px;
+  font-weight: 400;
+  background: #ffffff;
+  scroll-behavior: smooth;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+ul,
+ol,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.reboot-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.text_16 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.text_72 {
+  font-size: 60px;
+  color: #0d0d0d;
+  font-weight: 500;
+  text-align: center;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  max-width: 1441px;
+  padding: 0 100px;
+}
+.btn1 {
+  color: #ffffff;
+  padding: 16px 30px;
+  border-radius: 10px;
+  background: #009fda;
+  transition: all 360ms ease;
+}
+.btn1:hover {
+  background: #1252ae;
+}
+/*  main header area css start
+***************************************/
+.main-header-area {
+  padding: 20px 0;
+}
+.header-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo a {
+  display: inline-block;
+}
+.header-logo img {
+  width: 100%;
+  max-width: 120px;
+}
+.menu nav ul {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.menu nav ul li a {
+  color: #616161;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.menu nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 50%;
+  bottom: -2px;
+  background: #1252ae;
+  transition: 0.5s;
+  z-index: -1;
+}
+.menu nav ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  right: 50%;
+  bottom: -2px;
+  background: #1252ae;
+  transition: 0.5s;
+  z-index: -1;
+}
+.menu nav ul li a:hover::after {
+  width: 50%;
+  left: 0;
+}
+.menu nav ul li a:hover::before {
+  width: 50%;
+  right: 0;
+}
+.menu nav ul li a:hover {
+  color: #2e3192;
+}
+.active {
+  color: #2e3192 !important;
+}
+.menu-bar {
+  display: none;
+}
+.mobilButton {
+  display: none;
+}
+
+/*  Start : heading area css start
+***************************************/
+.headingArea {
+  padding: 100px 0 120px 0;
+  text-align: center;
+}
+.heading {
+  position: relative;
+}
+.heading::before {
+  position: absolute;
+  content: "";
+  bottom: -26px;
+  left: 0;
+  width: 11%;
+  height: 26%;
+  background-image: url("../images/_.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.heading::after {
+  position: absolute;
+  content: "";
+  top: 32px;
+  right: 0;
+  width: 7%;
+  height: 37%;
+  background-image: url(../images/{\ }.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.heading h1 {
+  margin: auto;
+  max-width: 600px;
+}
+.heading span {
+  color: #2e3192;
+}
+.heading p {
+  color: #808080;
+  margin: 16px auto 0;
+  font-size: 16px;
+  max-width: 660px;
+  line-height: 24px;
+}
+
+/*  Start : Custom solutions area
+***************************************/
+.customSolutions {
+  position: relative;
+}
+.customSolutions::after {
+  left: 110px;
+  bottom: -88px;
+  width: 12%;
+  height: 10%;
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/__.svg);
+}
+.customSolutions::before {
+  right: 160px;
+  bottom: -40px;
+  width: 10%;
+  height: 10%;
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/+_.svg);
+}
+.customSolutions h2 {
+  max-width: 700px;
+  text-align: start;
+  margin-bottom: 40px;
+}
+.customSolutions img {
+  max-width: 30px;
+}
+.customSolutions p {
+  color: #808080;
+  font-size: 16px;
+  line-height: 30px;
+  max-width: 660px;
+}
+.text_24 {
+  color: #2e3192;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.customRapper {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+.singleCustomItem {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.mtItem {
+  margin-top: 40px;
+}
+.getstart {
+  margin: 80px auto;
+  max-width: 140px;
+  text-align: center;
+}
+
+/*  Start : product area
+***************************************/
+.productArea {
+  padding: 80px 0;
+}
+.product {
+  gap: 33px;
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+.singleProduct h3 {
+  color: #0d0d0d;
+  margin-top: 10px;
+  font-size: 25px;
+  line-height: 33px;
+  font-weight: 500;
+}
+.singleProduct p {
+  color: #808080;
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+/*  Start : experts area 
+***************************************/
+.expertsArea {
+  padding: 40px 0;
+}
+.expertsContain {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.mainExperts {
+  position: relative;
+}
+.mainExperts::after {
+  right: 20%;
+  bottom: 0;
+  width: 6%;
+  height: 16%;
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/slas.svg);
+}
+.mainExperts::before {
+  left: 10%;
+  bottom: 0;
+  width: 3%;
+  height: 16%;
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/dot.svg);
+}
+.singleExperts {
+  margin: auto;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+}
+.singleExperts p {
+  color: #0d0d0d;
+  margin-top: 10px;
+}
+.expertsItem {
+  border-radius: 20px;
+  background: #2e3192;
+}
+.expertsItem img {
+  display: flex;
+  margin: auto;
+  width: 60px;
+  height: 160px;
+  align-items: center;
+  justify-content: center;
+}
+.hireUs {
+  margin: auto;
+  max-width: 140px;
+  text-align: center;
+  padding: 100px 0 0;
+}
+
+/*  Start : our skill area
+***************************************/
+.ourSkillArea {
+  padding: 100px 0 0;
+}
+.ourSkill {
+  gap: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.ourSkill::after {
+  top: -30%;
+  left: 22%;
+  width: 7%;
+  height: 16%;
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/[\ ].svg);
+}
+.ourSkill::before {
+  top: -16%;
+  right: 77px;
+  width: 7%;
+  height: 10%;
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/pancil.svg);
+}
+.ourSkillLeftSite {
+  width: 100%;
+  max-width: 557px;
+}
+.ourSkillLeftSite h2 {
+  font-size: 46px;
+  font-weight: 500;
+}
+.ourSkillLeftSite p {
+  color: #808080;
+  margin-top: 20px;
+}
+.ourSkillRightSite img {
+  width: 100%;
+  max-width: 534px;
+}
+
+/*  Start : Contact area
+***************************************/
+.contactArea {
+  padding: 100px 0;
+}
+.contactUS {
+  padding: 80px 30px;
+  border-radius: 20px;
+  background: #2e3192;
+}
+.contactUS h2 {
+  margin-bottom: 40px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+}
+.contactSocialLink {
+  margin: auto;
+  max-width: 900px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+}
+.singleSocialCall,
+.singleSocialGmail {
+  gap: 10px;
+  color: #0d0d0d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  transition: all 360ms ease;
+}
+.singleSocialCall:hover,
+.singleSocialGmail:hover {
+  background: #f4f4f4;
+}
+.socialMidea {
+  display: flex;
+  gap: 20px;
+}
+.btn2 {
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #009fda;
+  transition: all 360ms ease;
+}
+.btn2:hover {
+  background: #0480ad;
+}
+.iconSocial {
+  font-size: 20px;
+}
+
+/*  Start : footer area
+***************************************/
+.footerArea {
+  padding: 30px 0;
+  color: #ffffff;
+  background: #009fda;
+}
+.footer {
+  gap: 30px;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: space-between;
+}
+.footerLogo {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+}
+.footerLogo img {
+  width: 120px;
+}
